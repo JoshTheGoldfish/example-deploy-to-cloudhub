@@ -29,7 +29,7 @@
 					<muleVersion>3.8.4</muleVersion>
 					<username>jerneyTest</username>
 					<password>Anypointletmein1!</password>
-					<environment>Production</environment>
+					<environment>Sandbox</environment>
 				</configuration>
 				<executions>
 					<execution>
@@ -149,6 +149,16 @@
 
 	<repositories>
 		<repository>
+			<id>central</id>
+			<name>libs-release</name>
+			<url>http://maven.ms3-inc.com/artifactory/libs-release</url>
+		</repository>
+		<repository>
+			<id>snapshots</id>
+			<name>libs-snapshot</name>
+			<url>http://maven.ms3-inc.com/artifacatory/libs-snapshot</url>
+		</repository>
+		<!-- <repository>
 			<id>Central</id>
 			<name>Central</name>
 			<url>http://repo1.maven.org/maven2/</url>
@@ -159,7 +169,7 @@
 			<name>MuleSoft Releases Repository</name>
 			<url>http://repository.mulesoft.org/releases/</url>
 			<layout>default</layout>
-		</repository>
+		</repository> -->
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
