@@ -90,11 +90,11 @@
 	<distributionManagement>
 		<repository>
 			<id>ms3-release</id>
-			<url>http://52.71.247.113:8081/artifactory/libs-release/</url>
+			<url>http://52.71.247.113:8081/artifactory/libs-release-local/</url>
 		</repository>
 		<snapshotRepository>
 			<id>ms3-snapshot</id>
-			<url>http://52.71.247.113:8081/artifactory/libs-snapshot/</url>
+			<url>http://52.71.247.113:8081/artifactory/libs-snapshot-local/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
