@@ -24,8 +24,8 @@
 				<version>${mule.tools.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-                    <copyToDomainsDirectory>true</copyToDomainsDirectory>
-                </configuration>
+					<copyToDomainsDirectory>true</copyToDomainsDirectory>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -41,22 +41,22 @@
 				<version>2.0</version>
 				<configuration>
 					<skip>${cloudhub.skip.deploy}</skip>
-			        <deploymentType>cloudhub</deploymentType>
-			        <muleVersion>${mule.version}</muleVersion>
-			        <username>${anypoint.username}</username>
-			        <password>${anypoint.password}</password>
-			        <redeploy>true</redeploy>
-			        <environment>${anypoint.environment}</environment>
-			    </configuration>
-			    <executions>
-			        <execution>
-			            <id>deploy</id>
-			            <phase>deploy</phase>
-			            <goals>
-			                <goal>deploy</goal>
-			            </goals>
-			        </execution>
-			    </executions>			
+					<deploymentType>cloudhub</deploymentType>
+					<muleVersion>${mule.version}</muleVersion>
+					<username>${anypoint.username}</username>
+					<password>${anypoint.password}</password>
+					<redeploy>true</redeploy>
+					<environment>${anypoint.environment}</environment>
+				</configuration>
+				<executions>
+					<execution>
+						<id>deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -164,18 +164,18 @@
 	</dependencies>
 
 	<distributionManagement>
-	    <repository>
-	        <id>central</id>
-	        <name>ms3-inc.com-releases</name>
-	        <url>http://artifactory.cloudapps.ms3-inc.com:8081/artifactory/libs-release-local</url>
-	    </repository>
-	    <snapshotRepository>
-	        <id>snapshots</id>
-	        <name>ms3-inc.com-snapshots</name>
-	        <url>http://artifactory.cloudapps.ms3-inc.com:8081/artifactory/libs-snapshot-local</url>
-	    </snapshotRepository>
+		<repository>
+			<id>central</id>
+			<name>ms3-inc.com-releases</name>
+			<url>http://artifactory.cloudapps.ms3-inc.com:8081/artifactory/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>ms3-inc.com-snapshots</name>
+			<url>http://artifactory.cloudapps.ms3-inc.com:8081/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
 	</distributionManagement>
-	
+
 	<profiles>
 		<profile>
 			<id>local</id>
